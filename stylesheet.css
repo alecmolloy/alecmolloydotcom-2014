@@ -55,7 +55,7 @@ a {
 	background-image: linear-gradient(0deg, rgba(145, 167, 255, .85) 15%, rgba(145, 167, 255, 0) 15.01%);
 }
 
-a:link:focus {
+:link:focus {
 	background-color: rgba(145, 167, 255, .25);
 	background-image: none;
 }
@@ -72,6 +72,7 @@ a:link:focus {
 .button-cta:hover, .button-cta:active
 {
 	background-image: none;
+	background-color: #e85d2f;
 }
 
 .button-cta-primary
@@ -79,12 +80,6 @@ a:link:focus {
 	background-color: #f1693c;
 	background-image: none;
 	color:#fff;
-}
-
-.mnemonic
-{
-	margin: 2em;
-	width: 5em;
 }
 
 .mark-icon
@@ -142,61 +137,37 @@ a:link:focus {
 	margin-bottom: -1em;
 	width: 100%;
 	height: 100%;
-/*	background: url('img/bg-both.jpg') no-repeat left 24% center;*/
-	-webkit-background-size: cover;
-	background-size: cover;
 }
 
-.section01-nav, .scrollnav {
-	font: 400 1em/1em source-sans-pro, sans-serif;
+.section01-content {
+    width: 100%;
+    height: 100%;
+    border:0;
 }
 
-.section01-nav ul, .scrollnav-nav {
+
+.scrollnav-nav {
 	padding: 0;
 }
 
-.section01-nav li, .scrollnav li {
+.scrollnav li {
 	display: inline;
 	list-style: none;
 }
 
-.section01-nav li::after, .scrollnav li::after {
+.scrollnav li::after {
 	margin: 0 1.25em;
 	content: "|";
 }
 
-.section01-nav li:last-child::after, .scrollnav li:last-child::after {
+.scrollnav li:last-child::after {
 	margin: 0;
 	content: "";
 }
 
-.section01-nav :link, .section01-nav :active, .section01-nav :hover, .scrollnav a, .scrollnav a :link, .scrollnav a :hover, .scrollnav a :active
+.scrollnav a, .scrollnav a :link, .scrollnav a :hover, .scrollnav a :active
 {
 	background-image:none;
-}
-
-.section01-info {
-	position: absolute;
-	top: 20%;
-	right: 8%;
-	font-size: 1em;
-}
-
-.section01-monogram {
-	position: relative;
-	right: 6.3em;
-	bottom: 5.9em;
-	margin-right: .25em;
-	width: 5.3em;
-}
-
-.section01-info-name {
-	margin-bottom: -.25em;
-	font-size: 4em;
-}
-
-.section01-info-bio {
-	font-size: 1em;
 }
 
 .section02 {
@@ -306,7 +277,7 @@ a:link:focus {
 		font-size: .9em;
 	}
 
-	.section01,.section02,.section03,.section04,.section06 {
+	.section02,.section03,.section04,.section06 {
 		padding-right: 1em;
 		padding-left: 1em;
 	}
@@ -330,7 +301,7 @@ a:link:focus {
 		font-size: 1em;
 	}
 
-	.section01,.section02,.section03,.section04,.section05,.section06 {
+	.section02,.section03,.section04,.section05,.section06 {
 		padding-right: 1em;
 		padding-left: 1em;
 	}
@@ -360,7 +331,7 @@ a:link:focus {
 		font-size: 1em;
 	}
 
-	.section01,.section02,.section03,.section04,.section05,.section06 {
+	.section02,.section03,.section04,.section05,.section06 {
 		padding-right: 1em;
 		padding-left: 1em;
 	}
