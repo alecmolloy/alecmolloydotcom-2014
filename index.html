@@ -8,8 +8,9 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="flex.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/three.min.js"></script>
+
+    <script src="js/paper-core.min.js"></script>
+    <script src="js/floating-points.js"></script>
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 
@@ -40,14 +41,14 @@
     </nav>
 
     <section class="section01">
-        <iframe class="section01-content"src="http://alecmolloy.com/floating-points">
+        <canvas id="section01-content" src="http://alecmolloy.com/floating-points">
 
-        </iframe>
+        </canvas>
     </section>
     <section class="section02">
         <h2 class="section02-header flex-2-3">Hi, I am Alec.</h2>
         <p class="section02-graf flex-3-4">
-            I am a Product Manager and intrepreneur at Adobe, but my contract is up soon and I am looking to settle into a career.
+            I am a Product Manager and <a href="http://en.wikipedia.org/wiki/Intrapreneurship"></a>intrapreneur</a> at Adobe, but my contract is up soon and I am looking to settle into a career.
         </p>
     </section>
     <section class="section03">
@@ -58,7 +59,7 @@
                 <h3 class="resume-jobtitle">Product Manager</h3>
                 <div class="resume-workplace">Adobe (Creative Cloud Learning): March 2013–Present</div>
                 <ul class="resume-list">
-                    <li>Intrepreneur and innovator building learning games for Creative Cloud products such as Photoshop and Illustrator</li>
+                    <li>Intrapreneur and innovator building learning games for Creative Cloud products such as Photoshop and Illustrator</li>
                     <li>Proved games were a viable learning solution by building beta versions while teaching myself JavaScript graphics programming</li>
                     <li>Creating learning games with the goals of increasing active use, retaining subscribers, and converting trial users</li>
                     <li>Performing in-person and remote research sessions with customers</li>
@@ -89,7 +90,7 @@
                 <p class="resume-sideitem"><strong class="resume-accentitem">Associated Collegiate Press Pacemaker:</strong> Newspaper Design, 2012</p>
 
                 <h2 class="resume-section">Skills and Interests</h2>
-                <ul class="resume-skills">
+                <ul class="resume-skills resume-sideitem">
                     <li><strong class="resume-accentitem">Web:</strong> Responsive front-end design using modern languages. HTML, CSS, and JavaScript. 2D and 3D Canvas graphics.</li>
                     <li><strong class="resume-accentitem">Creative Software:</strong> Product expert in Photoshop, Lightroom, InDesign, Illustrator, After Effects, Premiere Pro</li>
                     <li><strong class="resume-accentitem">Analytics/Advertising:</strong> Excel, Adobe Analytics, Google AdWords, Google Analytics, Facebook Advertising</li>
@@ -114,8 +115,7 @@
 -->
 
     </section>
-    <section class="section04">
-    </section>
+    <section class="section04"></section>
     <section class="section05">
         do do do ~*~ dah dah dah
     </section>
@@ -131,11 +131,6 @@
             Typekit.load();
         } catch (e) {}
     </script>
-    <script src="js/parallax.js"></script>
-    <script src="js/orbitAndPanControls.js"></script>
-    <script src="js/icosahedronGeometry.js"></script>
-    <script src="js/room.js"></script>
-
     <!--    <script src="js/prefixfree.min.js"></script>-->
 </body>
 
