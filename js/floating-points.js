@@ -2,17 +2,19 @@ window.onload = floatingPoints;
 
 function floatingPoints() {
     var intervals = 20,
-        canvas = document.getElementById('section01-content'),
+        canvas = document.getElementById('bg-content'),
         tool = new paper.Tool(),
-        color = {
-//            colour1 : '#f05c94',
-            colour1 : '#fff5f9',
-            colour2 : '#ffffff'
-        },
-        lineColor = color.colour1;
+        isTouch = 'ontouchstart' in document.documentElement;
     paper.setup(canvas);
 
-    document.getElementsByTagName('body')[0].style.cursor = 'none';
+    if (!isTouch) {
+        lineColor = '#fcebf1';
+    } else {
+        lineColor = '#f2c0d3';
+    }
+
+    canvas.style.cursor = 'none';
+    document.getElementsByClassName('section02')[0].style.cursor = 'none';
 
     function updateIntervals(point1, point2) {
         var intervalArray = [];
@@ -35,16 +37,16 @@ function floatingPoints() {
     }
 
     var pointA = {
-            x: 0.5 * window.innerWidth,
-            y: 0.25 * window.innerHeight
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight
         },
         pointB = {
-            x: 0.1 * window.innerWidth,
-            y: 0.5 * window.innerHeight
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight
         },
         pointC = {
-            x: 0.9 * window.innerWidth,
-            y: 0.75 * window.innerHeight
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight
         };
     BAIntervals = updateIntervals(pointA, pointB);
     BCIntervals = updateIntervals(pointB, pointC);
@@ -57,10 +59,12 @@ function floatingPoints() {
         connectors[i].strokeCap = 'round';
     }
 
-    var axSign = -1.5,
-        aySign = .8,
-        cxSign = -2,
-        cySign = 1;
+    var axSign = 0.1,
+        aySign = 0.3,
+        bxSign = 0.05,
+        bySign = 0.07,
+        cxSign = -0.4,
+        cySign = -0.2;
 
 
     paper.view.onFrame = function () {
@@ -97,15 +101,42 @@ function floatingPoints() {
         BAIntervals = updateIntervals(pointA, pointB);
         BCIntervals = updateIntervals(pointB, pointC);
         updateConnectors(connectors);
+
+        if (isTouch || document.body.scrollTop > window.innerHeight * .75) {
+            pointB.x += bxSign;
+            pointB.y += bySign;
+            if (pointB.x < 1) {
+                bxSign *= -1;
+            };
+            if (pointB.y < 1) {
+                bySign *= -1;
+            };
+            if (pointB.x >= window.innerWidth) {
+                bxSign *= -1;
+            };
+            if (pointB.y >= window.innerHeight) {
+                bySign *= -1;
+            };
+            tool.onMouseMove = 0;
+        } else {
+            tool.onMouseMove = moveAxis;
+        }
     }
 
-    tool.onMouseMove = function (e) {
+
+
+
+    if (document.body.scrollTop < window.innerHeight * .75) {
+        tool.onMouseMove = moveAxis;
+    }
+
+    function moveAxis(e) {
         pointB.x = e.point.x;
         pointB.y = e.point.y;
     }
 
     tool.onKeyDown = function (e) {
-        if (e.key === "up") {
+        if (e.key === "=" || e.key === "+") {
             intervals++;
             BAIntervals = updateIntervals(pointA, pointB);
             BCIntervals = updateIntervals(pointB, pointC);
@@ -114,14 +145,7 @@ function floatingPoints() {
             connectors[intervals].strokeCap = 'round';
         }
 
-        if (e.key === "down") {
-            intervals--;
-            for (var i = 0; i <= intervals; i++) {
-                connectors[intervals + 1].remove();
-            }
-        }
-
-        if (e.key === "right") {
+        if (e.key === "-" && intervals > 1) {
             intervals--;
             for (var i = 0; i <= intervals; i++) {
                 connectors[intervals + 1].remove();

@@ -5,68 +5,74 @@
     <meta lang="en" charset="utf-8">
     <title>Alec Molloy</title>
 
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="flex.css">
-
-    <script src="js/paper-core.min.js"></script>
-    <script src="js/floating-points.js"></script>
-
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="title" content="Alec Molloy on the Internet" />
     <meta name="description" content="The Official Web Presence® of Alec Molloy." />
-    <meta property="og:url" content="http://alecmolloy.com" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Alec Molloy on the Internet" />
+    <meta property="twitter:description" content="The Official Web Presence® of Alec Molloy." />
+    <meta property="twitter:image" content="httnp://alecmolloy.com/og.png" />
+    <meta property="og:url" content="http://alecmolloy.com/" />
     <meta property="og:image" content="http://alecmolloy.com/og.jpg" />
     <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/mark-icon.png" sizes="192x192">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flex.min.css">
+
+    <script src="js/prefixfree.min.js"></script>
 
 </head>
 
 <body>
     <nav class="scrollnav">
         <aside class="scrollnav-mark">
-            <img src="img/mark-icon.svg" class="scrollnav-mark-icon mark-icon"> <span class="mark-name">Alec Molloy</span>
+            <img src="img/mark-icon.png" class="scrollnav-mark-icon mark-icon"> <span class="mark-name">Alec Molloy</span>
         </aside>
         <ul class="scrollnav-nav">
             <li>
                 <a href="/hireme/">Résumé</a>
             </li>
             <li>
-                <a href="http://alecmolloy.com/blog">Blog</a>
+                <a href="/blog.html">Blog</a>
             </li>
             <li>
                 <a href="/work.html">Work/Media</a>
             </li>
         </ul>
     </nav>
-
-    <section class="section01">
-        <canvas id="section01-content" src="http://alecmolloy.com/floating-points">
-
-        </canvas>
-    </section>
+    <canvas id="bg-content" src="http://alecmolloy.com/floating-points"></canvas>
     <section class="section02">
-        <h2 class="section02-header flex-2-3">Hi, I am Alec.</h2>
-        <p class="section02-graf flex-3-4">
-            I am a Product Manager and <a href="http://en.wikipedia.org/wiki/Intrapreneurship"></a>intrapreneur</a> at Adobe, but my contract is up soon and I am looking to settle into a career.
-        </p>
+        <h2 class="section02-header">
+                Hi, I am Alec.
+            </h2>
+        <div class="section02-intro ">
+            <p class="section02-graf flex-keep">
+                <img class="section02-profile" src="img/alec-profile.jpg">I am a Product Manager and intrapreneur experienced in building disruptive products. My contract at Adobe is coming to an end, and I am looking to start the next part of my career at a technology company with a creative culture.
+            </p>
+        </div>
     </section>
     <section class="section03">
-        <p class="section03-pmquote-graph1 flex-3-4">Here is what I have done:</p>
+        <p class="section03-pmquote-graph1">Here is what I have been up to:</p>
         <div class="resume">
             <div class="flex-2-3 flex-left">
                 <h2 class="resume-section">Work Experience</h2>
                 <h3 class="resume-jobtitle">Product Manager</h3>
-                <div class="resume-workplace">Adobe (Creative Cloud Learning): March 2013–Present</div>
+                <div class="resume-workplace">Adobe: March 2013–Present</div>
                 <ul class="resume-list">
-                    <li>Intrapreneur and innovator building learning games for Creative Cloud products such as Photoshop and Illustrator</li>
-                    <li>Proved games were a viable learning solution by building beta versions while teaching myself JavaScript graphics programming</li>
-                    <li>Creating learning games with the goals of increasing active use, retaining subscribers, and converting trial users</li>
-                    <li>Performing in-person and remote research sessions with customers</li>
-                    <li>Articulating a product vision informed by user research and input from UX and Engineering teams</li>
+                    <li>Intrapreneur and innovator, building experimental learning games for Creative Cloud products such as Photoshop and Illustrator</li>
+                    <li>Product managed, researched, developed, QA’d, and launched learning games that contributed to the conversion of trial users</li>
+                    <li>Proved games were a profitable learning solution by validating early MVPs with customers, and secured funding for future games</li>
+                    <li>Taught myself JavaScript graphics programming to fill the need for developer resources in the early stage of the product</li>
+                    <li>Performed in-person and remote research sessions with customers</li>
+                    <li>Articulated a product vision informed by user research and input from UX and Engineering teams</li>
                 </ul>
                 <h3 class="resume-jobtitle">Digital Media Intern</h3>
-                <div class="resume-workplace">Adobe (Community Help &amp; Learning): June 2012–March 2013
+                <div class="resume-workplace">Adobe: June 2012–March 2013
                 </div>
                 <ul class="resume-list">
                     <li>Wrote, edited, designed, and managed learning content for Photoshop, Lightroom, InDesign, and Acrobat</li>
@@ -93,35 +99,18 @@
                 <ul class="resume-skills resume-sideitem">
                     <li><strong class="resume-accentitem">Web:</strong> Responsive front-end design using modern languages. HTML, CSS, and JavaScript. 2D and 3D Canvas graphics.</li>
                     <li><strong class="resume-accentitem">Creative Software:</strong> Product expert in Photoshop, Lightroom, InDesign, Illustrator, After Effects, Premiere Pro</li>
-                    <li><strong class="resume-accentitem">Analytics/Advertising:</strong> Excel, Adobe Analytics, Google AdWords, Google Analytics, Facebook Advertising</li>
+                    <li><strong class="resume-accentitem">Analytics/Advertising: </strong>Excel, Adobe Analytics, Google AdWords, Google Analytics, Facebook Advertising</li>
                     <li><strong class="resume-accentitem">Video:</strong> Directing, producing, shooting, lighting, motion graphics, and editing</li>
                     <li><strong class="resume-accentitem">Hobbies:</strong> Cycling, reading, pastry baking</li>
-                    </li>
                 </ul>
 
             </div>
         </div>
-        <!--
-        <div class="section03-iconbox">
-            <img src="img/mnemonics/HTML5.svg" class="mnemonic" alt="HTML 5" title="HTML 5">
-            <img src="img/mnemonics/Javascript.svg" class="mnemonic" alt="Javascript" title="Javascript">
-            <img src="img/mnemonics/Lightroom.svg" class="mnemonic" alt="Lightroom" title="Lightroom">
-            <img src="img/mnemonics/Photoshop.svg" class="mnemonic" alt="Photoshop" title="Photoshop">
-            <img src="img/mnemonics/After-Effects.svg" class="mnemonic" alt="After Effects" title="After Effects">
-            <img src="img/mnemonics/Premiere-Pro.svg" class="mnemonic" alt="Premiere Pro" title="Premiere Pro">
-            <img src="img/mnemonics/InDesign.svg" class="mnemonic" alt="InDesign" title="InDesign">
-            <img src="img/mnemonics/Illustrator.svg" class="mnemonic" alt="Illustrator" title="Illustrator">
-        </div>
--->
 
     </section>
-    <section class="section04"></section>
-    <section class="section05">
-        do do do ~*~ dah dah dah
-    </section>
-    <section class="section06">
-        <p class="section06-graf">I want to solve big problems with passionate educators.</p>
-        <p class="section06-graf">If that sounds like you, let’s talk.</p>
+    <section class="section04">
+        <p class="section04-graf">I want to solve big problems with passionate innovators.</p>
+        <p class="section04-graf">If you do too, let’s talk. I am your Product Manager.</p>
         <a id="emailme" class="button-cta button-cta-primary" href="mailto:czaravm@gmail.com">czaravm@gmail.com</a>
     </section>
     <aside class="alec-gradient"></aside>
@@ -131,7 +120,27 @@
             Typekit.load();
         } catch (e) {}
     </script>
-    <!--    <script src="js/prefixfree.min.js"></script>-->
+    <script src="js/paper-core.min.js"></script>
+    <script src="js/floating-points.js"></script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-20430545-1', 'auto');
+        ga('require', 'linkid', 'linkid.js');
+        ga('send', 'pageview');
+    </script>
+
 </body>
 
 </html>

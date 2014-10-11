@@ -1,0 +1,251 @@
+@charset "utf-8";
+body
+{
+
+}
+
+.container_16
+{
+	margin-top:23px;
+}
+
+header
+{
+	padding-top:3px;
+	position:fixed;
+	top:0px;
+}
+
+footer
+{
+	border-top:#aaa 1px dotted;
+	margin-top:8px;
+	padding-bottom:30px;
+	padding-top:8px;
+}
+
+nav
+{
+	height:75px;
+}
+
+.sectionbox
+{
+	margin-top:30px;
+}
+
+#bio, #education
+{
+	margin-bottom:6px;
+}
+
+#bio #portrait
+{
+	background-image:url(assets/portraitbw.jpg);
+	overflow:hidden;
+	border-radius:5px;
+	height:329px;
+	width:280px;
+	box-shadow:#999 0 0 5px;
+	margin-bottom:16px;
+}
+
+#experience .contentbox
+{
+	margin-top:21px;
+	padding-bottom:11px;
+	margin-bottom:22px;
+	border-bottom:#ccc 1px dotted;
+}
+
+#education .contentbox
+{
+	border-bottom:#ccc 1px dotted;
+	padding-bottom:11px;
+}
+
+#bio .contentbox, #skillset .contentbox
+{
+	margin-top:33px;
+}
+
+#education h4
+{
+	margin-top:22px;
+}
+
+#skillset h3
+{
+	margin-bottom:33px;
+}
+
+article {
+	display:block;
+	padding-top:12px;
+	padding-left: 10px;
+	height:700px;
+}
+
+footer a:link, footer a:visited  
+{
+	color:#777;
+}
+
+footer a:active, footer a:hover
+{
+
+	text-shadow:#fff 1px 1px 2px;
+}
+
+footer p
+{
+	text-align:center;
+}
+
+div.padder
+{
+	height:5px;
+	padding:0;
+	display:block;
+}
+
+a
+{
+	text-decoration:none;
+	color:#000;
+}
+
+h4, h4 a
+{
+	color:#666;
+}
+
+nav h3
+{	
+	font-size:25px;
+	margin-top:15px;
+	margin:0;
+}
+
+
+h3 a:active, a:hover {
+	text-shadow:#555 1px 1px 2px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-smooth:always;
+}
+
+h1, h2, h3
+{
+	font-family:'Raleway', Archer, Helvetica, Sans-serif;
+	font-weight:100;
+	margin:0px;
+}
+
+h4, h5, h6
+{
+	color:#666;
+	text-shadow:#ddd 1px 1px 1px;
+	font-weight:100;
+	margin:0;
+}
+
+p
+{
+	color:#777;
+	font-weight:100;
+	margin-bottom:15px;
+	text-shadow:#eee 1px 1px 0;
+	font-family: 'Ubuntu', arial, serif;
+	font-size:10pt;
+	line-height:15px;
+	margin-top:10px;
+	font-smooth:none;
+}
+
+h1
+{
+	color:#c00000
+}
+
+#mono
+{
+	height:70px;
+	border-bottom:#999 1px solid;
+	margin-bottom:8px;
+	padding-top:39px;
+}	
+
+#logomono
+{
+	position:absolute;
+	top:5px;
+	right:0px;
+}
+
+h2
+{
+	text-shadow:#999 1px 1px 3px;
+	font-size:35px;
+}
+
+h3
+{
+	font-size:27px;
+	line-height:30px;
+}
+
+.sectionbox h3
+{
+	border-bottom:#999 1px solid;
+	padding-bottom:5px;
+}
+
+h4
+{
+	font-family: 'Ubuntu', arial, serif;
+	font-size:25px;
+	line-height:30px;
+	height:30px;
+	font-weight:100;
+}
+
+h5
+{
+	font-family: 'Ubuntu', arial, serif;
+	margin-top:1px;
+	font-size:20px;
+	line-height:30px;
+	height:30px;
+	font-weight:100;
+}
+
+h6
+{
+	font-family: 'Ubuntu', arial, serif;
+	margin-top:1px;
+	font-size:17px;
+	line-height:30px;
+	height:30px;
+	font-weight:100;
+}
+
+ul
+{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+
+#experience p
+{
+	margin-bottom:15px;
+	margin-top:10px;
+}
+
+.ralign
+{
+	text-align:right;
+}
