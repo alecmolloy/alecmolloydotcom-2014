@@ -1,0 +1,54 @@
+.wham
+{
+    display:none;
+}
+
+#intro_content
+{
+    font: normal normal 400 10em/1em Astloch, serif;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.5);
+}
+
+#top_content
+{
+    font: normal normal 400 5em/1em Astloch, serif;
+    text-align:left;
+    position:absolute;
+    top:70px;
+    left:50%;
+}
+
+#bottom_content
+{
+    position: absolute;
+    bottom:20px;
+    width:100%;
+    font: normal normal 400 3.05em/1.2em Astloch, serif;
+    text-align:center;
+}
+
+.small_text
+{
+    font-size:30px;
+    line-height:1em;
+    font-weight:400;
+}
+
+body
+{
+    background: url(images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    color:#fff;
+}
+
+@media only screen and (max-device-width: 480px) {
+#bottom_content
+{
+    top:1200px;
+}
+
+}

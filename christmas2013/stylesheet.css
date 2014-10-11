@@ -1,0 +1,229 @@
+body
+{
+    margin:0; padding:0;
+    background-color:#111;
+    color:#fff;
+}
+
+.textbox
+{
+    font: 4em/1em astloch, serif;
+    color:rgba(256,256,256,1);
+}
+
+.audio-player
+{
+    position:relative;
+    width:267px;
+    height:25px;
+    overflow:hidden;
+}
+
+.audio-player-hider
+{
+    position:absolute;
+    top:-400px;
+    left:-5px
+}
+
+#intro-content
+{
+    font: normal normal 400 10em/1em Astloch, serif;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.5);
+}
+
+#top-content
+{
+    font: normal normal 400 6em/1em Astloch, serif;
+    text-align:left;
+    position:absolute;
+    top:.75em;
+    left:8%;
+}
+
+#bottom-content
+{
+    position: fixed;
+    bottom:1em;
+    right:8%;
+    padding-left:8%;
+    font: normal normal 400 3em/1.2em Astloch, serif;
+    text-align:left;
+}
+
+.small-text
+{
+    font-size:.4em;
+    line-height:1em;
+    font-weight:400;
+}
+.christmas-photo
+{
+    width:20%;
+    position: fixed;
+}
+
+@media screen and (max-width: 480px) {
+    body
+    {
+        font-size:.75em;
+    }
+
+    #top-content
+    {
+        top:.5em;
+    }
+
+    .christmas-photo
+    {
+        width:50%;
+    }
+}
+
+.r0 { -webkit-transform: rotate(0deg);}
+.r5 { -webkit-transform: rotate(5deg);}
+.r10 { -webkit-transform: rotate(10deg);}
+.r15 { -webkit-transform: rotate(15deg);}
+.r20 { -webkit-transform: rotate(20deg);}
+.r30 { -webkit-transform: rotate(30deg);}
+.r40 { -webkit-transform: rotate(40deg);}
+.rn5 { -webkit-transform: rotate(-5deg);}
+.rn10 { -webkit-transform: rotate(-10deg);}
+.rn15 { -webkit-transform: rotate(-15deg);}
+.rn20 { -webkit-transform: rotate(-20deg);}
+.rn30 { -webkit-transform: rotate(-30deg);}
+.rn40 { -webkit-transform: rotate(-40deg);}
+
+
+#merry-christmas {
+    -webkit-animation: christmas-lights 5s infinite;
+    -moz-animation: christmas-lights 5s infinite;
+    -ms-animation: christmas-lights 5s infinite;
+    -o-animation: christmas-lights 5s infinite;
+    animation: christmas-lights 5s infinite;
+}
+
+@keyframes "christmas-lights" {
+    0% {
+        color: #d03f3f;
+    }
+10% {
+    color: #d03f3f;
+}
+30% {
+    color: #48de35;
+}
+50% {
+    color: #4ba1d7;
+}
+70% {
+    color: #f8f845;
+}
+90% {
+    color: #5f73e0;
+}
+100% {
+    color: #d03f3f;
+}
+
+}
+
+@-moz-keyframes christmas-lights {
+    0% {
+        color: #d03f3f;
+    }
+10% {
+    color: #d03f3f;
+}
+30% {
+    color: #48de35;
+}
+50% {
+    color: #4ba1d7;
+}
+70% {
+    color: #f8f845;
+}
+90% {
+    color: #5f73e0;
+}
+100% {
+    color: #d03f3f;
+}
+
+}
+
+@-webkit-keyframes "christmas-lights" {
+    0% {
+        color: #d03f3f;
+    }
+10% {
+    color: #d03f3f;
+}
+30% {
+    color: #48de35;
+}
+50% {
+    color: #4ba1d7;
+}
+70% {
+    color: #f8f845;
+}
+90% {
+    color: #5f73e0;
+}
+100% {
+    color: #d03f3f;
+}
+
+}
+
+@-ms-keyframes "christmas-lights" {
+    0% {
+        color: #d03f3f;
+    }
+10% {
+    color: #d03f3f;
+}
+30% {
+    color: #48de35;
+}
+50% {
+    color: #4ba1d7;
+}
+70% {
+    color: #f8f845;
+}
+90% {
+    color: #5f73e0;
+}
+100% {
+    color: #d03f3f;
+}
+
+}
+
+@-o-keyframes "christmas-lights" {
+    0% {
+        color: #d03f3f;
+    }
+10% {
+    color: #d03f3f;
+}
+30% {
+    color: #48de35;
+}
+50% {
+    color: #4ba1d7;
+}
+70% {
+    color: #f8f845;
+}
+90% {
+    color: #5f73e0;
+}
+100% {
+    color: #d03f3f;
+}
+
+}
