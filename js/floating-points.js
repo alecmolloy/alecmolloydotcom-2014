@@ -14,7 +14,7 @@ function floatingPoints() {
     }
 
     canvas.style.cursor = 'none';
-    document.getElementsByClassName('section02')[0].style.cursor = 'none';
+    document.getElementsByClassName('home-section02')[0].style.cursor = 'none';
 
     function updateIntervals(point1, point2) {
         var intervalArray = [];
