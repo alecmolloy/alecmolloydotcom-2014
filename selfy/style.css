@@ -1,0 +1,29 @@
+html {
+    padding: 0;
+    height: 100%;
+    marign: 0;
+    font-size: 23px;
+}
+body {
+    position: absolute;
+    padding: 0;
+    height: 100%;
+    marign: 0;
+    text-align: right;
+}
+.message {
+    max-width: 19em;
+    display: inline-block;
+    min-height: 1em;
+    text-align:right;
+    margin: 0;
+    border-style: solid;
+    padding: 1em 1.75em 1em .5em;
+    /*    border-image: url(message-mask.svg) 35 54 33 39 repeat;*/
+    background-image: url(message-mask-01.svg), url(message-mask-02.svg), url(message-mask-03.svg), url(message-mask-04.svg);
+    background-position: left top, right top, right bottom, left bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    color: #fff;
+    font-family: Helvetica Neue, sans-serif;
+    overflow: hidden;
+}
