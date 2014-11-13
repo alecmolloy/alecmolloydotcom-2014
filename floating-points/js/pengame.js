@@ -128,7 +128,7 @@ window.onload = function () {
                 connectors[intervals + 1].remove();
             }
         }
-        
+
         if (e.key === "right") {
             intervals--;
             for (var i = 0; i <= intervals; i++) {

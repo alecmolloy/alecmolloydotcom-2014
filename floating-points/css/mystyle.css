@@ -16,6 +16,7 @@ html {
 
 iframe
 {
+    display: none;
 	-webkit-transform: translate(-1000px,-1000px);
 	    -ms-transform: translate(-1000px,-1000px);
 	        transform: translate(-1000px,-1000px);
