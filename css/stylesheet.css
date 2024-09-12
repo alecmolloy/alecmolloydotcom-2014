@@ -76,7 +76,6 @@ li {
 }
 .button-cta:hover,
 .button-cta:active {
-    box-shadow: none;
     background-color: rgb(239, 87, 143);
 }
 .button-cta-primary {
@@ -173,7 +172,7 @@ li {
 .home-section02-header {
     margin-bottom: .3em;
     color: #4ef7d6;
-    font: 600 normal 5em/1em"Source Sans Pro", source-sans-pro, Helvetica, sans-serif;
+    font: 600 normal 6em/1em"Source Sans Pro", source-sans-pro, Helvetica, sans-serif;
 }
 .home-section02-profile {
     width: 7em;
